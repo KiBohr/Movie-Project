@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { mainContext } from "../../context/MainProvider";
-import { Movie} from "../../assets/contracts/interfaces/Interfaces";
+
 import MovieCard from "../movieCard/MovieCard";
+import { Movie } from "../../assets/data/Data";
 
 export interface MovieListProps {
     movies: Movie[];
@@ -10,18 +11,16 @@ export interface MovieListProps {
   
 const MovieList
  = () => {
-    const {movies,setMovies} = useContext(mainContext) as MovieListProps
+    const {movies} = useContext(mainContext) as MovieListProps
 
     return ( 
         <section className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 mb-10">
             {movies.map((movie: Movie) =>{
             return(
-                <MovieCard movie={movie}/>
+                <MovieCard key={movie.title} movie={movie}/>
             )  
             })}
         </section>
-        
-        
      );
 }
 

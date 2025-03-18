@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
-import moviesArray from "../assets/data/Data";
-import { Movie } from "../assets/contracts/interfaces/Interfaces";
+import moviesArray, { Movie } from "../assets/data/Data";
+
 
 
 export const mainContext = createContext({})

@@ -1,4 +1,11 @@
-import { Movie } from "../contracts/interfaces/Interfaces";
+export type Movie = {
+  title: string;
+  year: string;
+  director: string;
+  duration: string;
+  genre: string[];
+  rate: string;
+};
 
 const moviesArray: Movie[] = [
   {

@@ -1,14 +1,13 @@
 interface IMainButtonProps{
     buttonText: string,
-    img?: string
-    // ! hier um die funktionen für die buttons mitzugeben
-    // function: () => void
+    myFunction: () => void,
+    img?: string,
 }
 
-const MainButton = ({buttonText, img}: IMainButtonProps) => {
+const MainButton = ({buttonText, myFunction, img}: IMainButtonProps) => {
     return ( 
         <>
-        <button className="flex items-center justify-center gap-1 border-2 border-dark-blue rounded-full py-1 px-2 text-dark-blue bg-light-grey cursor-pointer transition ease-in-out hover:opacity-70">
+        <button onClick={()=> myFunction()} className="flex items-center justify-center gap-1 border-2 border-dark-blue rounded-full py-1 px-2 text-dark-blue bg-light-grey cursor-pointer transition ease-in-out hover:opacity-70 md:text-xl lg:text-2xl">
             {buttonText}
             <img className="h-5" src={img}/>
             </button>

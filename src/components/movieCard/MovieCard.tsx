@@ -1,4 +1,5 @@
-import { Movie } from "../../assets/contracts/interfaces/Interfaces";
+import { Movie } from "../../assets/data/Data";
+
 
 interface MovieCardProps{
     movie: Movie
@@ -6,11 +7,11 @@ interface MovieCardProps{
 
 const MovieCard = ({movie}:MovieCardProps) => {
     return(
-        <article className="bg-dark-blue rounded-xl p-5 text-light-grey flex flex-col items-start gap-4 text-xl">
-            <h2 className="text-3xl uppercase">{movie.title}</h2>
+        <article className="bg-light-grey/80 rounded-xl p-5 text-dark-blue flex flex-col items-center gap-4 text-xl shadow-lg transition ease-in-out hover:shadow-2xl cursor-pointer">
+            <h2 className="text-4xl uppercase mb-5">{movie.title}</h2>
             <div className=" flex w-[100%] justify-between text-3xl">
-                <div className="flex gap-1 items-center">
-                    <img className="h-8" src="../../../public/img/star-06.png" alt="" />
+                <div className="flex gap-1 items-center justify-center">
+                    <img className="h-8" src="../../../public/img/star.png" alt="" />
                     <p>{movie.rate}</p>
                 </div>
                 <div>
