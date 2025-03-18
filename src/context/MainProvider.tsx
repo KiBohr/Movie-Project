@@ -1,8 +1,6 @@
 import { createContext, useState } from "react";
 import moviesArray, { Movie } from "../assets/data/Data";
 
-
-
 export const mainContext = createContext({})
 
 const MainProvider = ({children}:{children:React.ReactNode}) => {

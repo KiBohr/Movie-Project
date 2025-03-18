@@ -13,7 +13,7 @@ function App() {
   )
 
   return (
-    <main className="font-[Vollkorn] bg-light-blue text-dark-blue p-5">
+    <main className="font-[Raleway] bg-light-blue text-dark-blue p-5">
       <RouterProvider router={router}/>
     </main>
   )
