@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@theme {
+    /* colors: */
+      --color-red: #D72411;
+      --color-light-blue: #AFCDDD;
+      --color-mid-blue: #136794;
+      --color-dark-blue: #093248;
+      --color-light-grey: #E2E2E2;
+      --color-dark-grey: #7E7E7E;
+      
+
+      --animate-wiggle: wiggle 1s ease-in-out infinite;
+    @keyframes wiggle {
+      0%,
+      100% {
+        transform: rotate(-3deg);
+      }
+      50% {
+        transform: rotate(3deg);
+      }
+    }
+    }
+    
+    @font-face {
+      font-family: Vollkorn;
+      font-style: normal;
+      font-weight: 200 700;
+      src: url("../public/fonts/Vollkorn-VariableFont_wght.ttf") format("woff2");
+    }
+  
