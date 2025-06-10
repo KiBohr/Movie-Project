@@ -1,4 +1,7 @@
 # Movie Project
+[mov_record.webm](https://github.com/user-attachments/assets/c9af9de7-d035-486d-a671-81c154526109)
+
+![mov_screenshot](https://github.com/user-attachments/assets/3cd831aa-0525-4149-b89b-dc24b10e9972)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
